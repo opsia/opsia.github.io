@@ -23,7 +23,7 @@ function setup() {
 }
 
 function draw() {
-  background(0, 255, 0);
+  background(0, 0, 0);
 
 //Declarar variable LOCAL anchoBorde y asignarle de inmediato un valor
 var anchoBorde = 5;
@@ -31,10 +31,14 @@ var anchoBorde = 5;
  estilo1();
   
     ellipse(200, 50, 30, 30);
+    ellipse(230, 60, 30, diametro);
+    ellipse(260, 70, 30, 30);
+
     
     estilo2();
     ellipse(mouseX, mouseY, diametro, diametro);
-    
+    ellipse(300, 200, 30, diametro);
+
 }
 
 //Declaracion de funcion de destilo de elipse
@@ -66,7 +70,7 @@ function estilo2(){
   
   //Color del relleno
   fill(0, 200, 0);
-  diametro= diametro+0.2;
+  diametro= diametro+0.25;
 
 
 }
